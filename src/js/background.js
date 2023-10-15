@@ -67,7 +67,8 @@ const allowCookies = [
   'zeit.de',
   'expansion.com',
   'dailytelegraph.com.au',
-  'washingtonpost.com'
+  'washingtonpost.com',
+  'nytimes.com'
 ];
 
 // Removes cookies after page load
@@ -109,8 +110,7 @@ const removeCookies = [
   'wsj.com',
   'medium.com',
   'washingtonpost.com',
-  'japantimes.co.jp',
-  'nytimes.com'
+  'japantimes.co.jp'
 ];
 
 // Contains remove cookie sites above plus any custom sites
@@ -156,7 +156,8 @@ const useGoogleBotSites = [
   'df.cl',
   'ft.com',
   'wired.com',
-  'zeit.de'
+  'zeit.de',
+  'nytimes.com'
 ];
 
 // Override User-Agent with Bingbot
@@ -525,6 +526,24 @@ extensionApi.webRequest.onCompleted.addListener(function (details) {
 }, {
   urls: ['<all_urls>']
 });
+
+// nytimes.com fix
+extensionApi.webRequest.onHeadersReceived.addListener(function (details) {
+  if (!isSiteEnabled(details)) {
+    return;
+  }
+  let headers = details.responseHeaders;
+  headers = headers.map(function (header) {
+    if (header.name === 'x-frame-options') { header.value = 'SAMEORIGIN'; }
+    return header;
+  });
+  return {
+    responseHeaders: headers
+  };
+}, {
+  urls: ['*://*.nytimes.com/*']
+},
+['blocking', 'responseHeaders']);
 
 // Google Analytics to anonymously track DAU (Chrome only)
 function initGA () {
