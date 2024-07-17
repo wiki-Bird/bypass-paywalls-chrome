@@ -68,16 +68,18 @@
     }
 
     #select-all {
-      border-top: solid 1px #aaa;
+      border-top: solid 1px #d8d8d8;
       background: #eee;
-      padding: 4px 0;
+      padding: 5px 0;
+      display: flex;
+      align-items: center;
     }
 
     #bypass_sites {
       border-bottom: solid 1px #aaa;
       flex-grow: 1;
       overflow-y: auto;
-      padding-bottom: 4px;
+      padding: 4px 0 4px 0;
     }
 
     input[type=checkbox] {
@@ -109,6 +111,17 @@
       display: inline-block;
       margin-right: 1em;
     }
+
+    #search-input {
+      width: 100%;
+      padding: 5px 6px 4px 6px;
+      background-color: #eee;
+      box-sizing: border-box;
+      border:none;
+      outline: none;
+      margin-bottom: 0;
+      border-radius: 0;
+    }
   </style>
 </head>
 <body>
@@ -122,6 +135,7 @@
       Selected sites will have their cookies cleared and referer set to Google. You should
       uncheck sites you are logged in to otherwise you will be logged out on every visit.
     </p>
+    <div id="search-bar"><input type="text" id="search-input" placeholder="Search sites..."></div>
     <label id="select-all"><input checked type="checkbox"><em>Select all/none</em></label>
     <div id='bypass_sites'></div>
   </div>

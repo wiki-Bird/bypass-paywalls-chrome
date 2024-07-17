@@ -101,12 +101,31 @@ function selectAll () {
   };
 }
 
+// Filter sites based on search term
+function filterSites(searchTerm) {
+  const sites = document.querySelectorAll('#bypass_sites label');
+
+  sites.forEach(site => {
+    const text = site.textContent.toLowerCase();
+    const match = text.includes(searchTerm.toLowerCase());
+    site.style.display = match ? '' : 'none';
+  });
+}
+
+// Event listener for search bar input
+function handleSearch(event) {
+  const searchTerm = event.target.value;
+  filterSites(searchTerm);
+}
+
+
 // Initialize UI
 function init() {
   renderOptions();
 
   $('#save').addEventListener('click', saveOptions);
   $('#select-all input').addEventListener('click', selectAll);
+  document.querySelector('#search-bar').addEventListener('input', handleSearch);
 
   for (const el of $$('#tabs button')) {
     el.addEventListener('click', selectPane);
