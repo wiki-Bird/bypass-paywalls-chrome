@@ -2,7 +2,7 @@
   <img src="https://github.com/wiki-Bird/bypass-paywalls-updated/blob/master/src/icons/bypass.png" width="75" height="75"/>
 </p>
 
-<h1 align="center">Bypass Paywalls</h1>
+<h1 align="center">Bypass Paywalls Updated</h1>
 
 *Bypass Paywalls is a web browser extension to help bypass paywalls for selected sites.*
 
@@ -27,7 +27,7 @@
 
 ### Changes:
 
-This is an updated version of [iamadamdev's bypass-paywalls-chrome](https://github.com/iamadamdev/bypass-paywalls-chrome), which closed PRs sometime in 2024. The following is a list of changes made:
+This is an updated version of [iamadamdev's bypass-paywalls-chrome](https://github.com/iamadamdev/bypass-paywalls-chrome), which closed PRs sometime in 2024. This fork aims to update the original, while maintaining the same design principles. The following is a list of changes made:
 
 - Added searching to options modal
 
