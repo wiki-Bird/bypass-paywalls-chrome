@@ -1,21 +1,23 @@
 <p align="center">
-  <img src="https://github.com/iamadamdev/bypass-paywalls-chrome/blob/master/src/icons/bypass.png" width="75" height="75"/>
+  <img src="https://github.com/wiki-Bird/bypass-paywalls-updated/blob/master/src/icons/bypass.png" width="75" height="75"/>
 </p>
 
 <h1 align="center">Bypass Paywalls</h1>
 
 *Bypass Paywalls is a web browser extension to help bypass paywalls for selected sites.*
 
+**This is an updated version of [iamadamdev's bypass-paywalls-chrome](https://github.com/iamadamdev/bypass-paywalls-chrome), which closed PRs sometime in 2024.**
+
 ### Installation Instructions
 **Google Chrome / Microsoft Edge** (Custom sites supported)
-1. Download this repo as a [ZIP file from GitHub](https://github.com/iamadamdev/bypass-paywalls-chrome/archive/master.zip).
+1. Download this repo as a [ZIP file from GitHub](#TODO).
 1. Unzip the file and you should have a folder named `bypass-paywalls-chrome-master`.
 1. In Chrome/Edge go to the extensions page (`chrome://extensions` or `edge://extensions`).
 1. Enable Developer Mode.
 1. Drag the `bypass-paywalls-chrome-master` folder anywhere on the page to import it (do not delete the folder afterwards).
 
 **Mozilla Firefox** (Custom sites not supported)
-* [Download and install the latest version](https://github.com/iamadamdev/bypass-paywalls-chrome/releases/latest/download/bypass-paywalls-firefox.xpi)
+* [Download and install the latest version](#TODO)
 
 **Notes**
 * Every time you open Chrome it may warn you about running extensions in developer mode, just click &#10005; to keep the extension enabled.
@@ -23,7 +25,16 @@
 * This extension works best alongside the adblocker uBlock Origin.
 * The Firefox version supports automatic updates.
 
+### Changes:
+
+This is an updated version of [iamadamdev's bypass-paywalls-chrome](https://github.com/iamadamdev/bypass-paywalls-chrome), which closed PRs sometime in 2024. The following is a list of changes made:
+
+- Added searching to options modal
+
 ### Bypass the following sites' paywalls with this extension:
+
+<details>
+<summary> View Sites </summary>
 
 [Adweek](https://www.adweek.com)\
 [American Banker](https://www.americanbanker.com)\
@@ -187,6 +198,7 @@
 [Winston-Salem Journal](https://journalnow.com)\
 [Wired](https://www.wired.com)\
 [Zeit Online](https://www.zeit.de)
+</details>
 
 ### Sites with limited number of free articles
 The free article limit can normally be bypassed by removing cookies for the site.*
@@ -202,11 +214,11 @@ Only large or major sites will be considered. Usually premium articles cannot be
 
 1. Install the uBlock Origin extension if it hasn't been installed already. See if you are still getting a paywall.
 2. Check if using Cookie Remover ([Google Chrome version](https://chrome.google.com/webstore/detail/cookie-remover/kcgpggonjhmeaejebeoeomdlohicfhce) or [Mozilla Firefox version](https://addons.mozilla.org/en-US/firefox/addon/cookie-remover/)) can bypass the paywall. If not, continue to the next step.
-3. First search [Issues](https://github.com/iamadamdev/bypass-paywalls-chrome/issues) to see if the site has been requested already.
+3. First search [Issues](https://github.com/wiki-Bird/bypass-paywalls-updated/issues) to see if the site has been requested already.
 4. Visit an article on the site you want to bypass the paywall for and copy the article title.
 5. Open up a new incognito window (Ctrl+Shift+N on Chrome) or Private window (Ctrl+Shift+P on Firefox), and paste the article title into Google.
 6. Click on the same article from the Google search results page.
-7. If it loads without a paywall you can [submit a request](https://github.com/iamadamdev/bypass-paywalls-chrome/issues/new/choose) and replace the entire template text with the word "Confirmed". Otherwise please do not submit an issue as this extension cannot bypass it either.
+7. If it loads without a paywall you can [submit a request](https://github.com/wiki-Bird/bypass-paywalls-updated/issues/new/choose).
 
 ### Troubleshooting
 * This extension works best alongside uBlock Origin [for Google Chrome](https://chrome.google.com/webstore/detail/ublock-origin/cjpalhdlnbpafiamejdnhcphjbkeiagm) or [for Mozilla Firefox](https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/).
@@ -214,7 +226,7 @@ Only large or major sites will be considered. Usually premium articles cannot be
 * Try clearing [cookies](https://chrome.google.com/webstore/detail/cookie-remover/kcgpggonjhmeaejebeoeomdlohicfhce).
 * Make sure you're running the latest version of Bypass Paywalls.
 * If a site is having problems try unchecking "\*General Paywall Bypass\*" in Options.
-* If none of these work, you can submit an issue [here](https://github.com/iamadamdev/bypass-paywalls-chrome/issues/new/choose).
+* If none of these work, you can submit an issue [here](https://github.com/wiki-Bird/bypass-paywalls-updated/issues).
 
 ### Contributing - Pull Requests
 PRs are welcome. 
@@ -222,10 +234,6 @@ PRs are welcome.
 2. At a minimum these files need to be updated: `README.md`, `manifest-ff.json`, `src/js/sites.js`, and possibly `src/js/background.js`, and/or `src/js/contentScript.js`.
 3. Follow existing code-style and use camelCase.
 4. Use [JavaScript Semi-Standard Style linter](https://github.com/standard/semistandard). Don't need to follow it exactly. There will be some errors (e.g., do not use it on `sites.js`).
-
-### Show your support
-* Follow me on Twitter [@iamadamdev](https://twitter.com/iamadamdev) for updates.
-* I do not ask for donations, all I ask is that you star this repo.
 
 ### Disclaimer
 * This software is provided for educational purposes only and
