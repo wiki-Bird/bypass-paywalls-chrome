@@ -17,7 +17,7 @@
 1. Drag the `bypass-paywalls-chrome-master` folder anywhere on the page to import it (do not delete the folder afterwards).
 
 **Mozilla Firefox** (Custom sites not supported)
-* [Download and install the latest version](#TODO)
+* [Download and install the latest version](https://github.com/wiki-Bird/bypass-paywalls-updated/releases/download/1.8.2/bppFireFox1.8.2.xpi)
 
 **Notes**
 * Every time you open Chrome it may warn you about running extensions in developer mode, just click &#10005; to keep the extension enabled.
@@ -30,6 +30,7 @@
 This is an updated version of [iamadamdev's bypass-paywalls-chrome](https://github.com/iamadamdev/bypass-paywalls-chrome), which closed PRs sometime in 2024. This fork aims to update the original, while maintaining the same design principles. The following is a list of changes made:
 
 - Added searching to options modal
+- Reskinned popup modal
 
 ### Bypass the following sites' paywalls with this extension:
 
